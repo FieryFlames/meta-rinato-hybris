@@ -8,11 +8,11 @@ LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 COMPATIBLE_MACHINE = "rinato"
 
-SRC_URI = "git://https://github.com/Biktorgj/Android_b2_Kernel;protocol=https \
+SRC_URI = "git://github.com/Biktorgj/Android_b2_Kernel;protocol=https \
     file://defconfig \
     file://img_info"
-SRCREV = "9baeef88e425be653d8287f141ee209d78b918b3"
-LINUX_VERSION ?= "3.10"
+SRCREV = "master"
+LINUX_VERSION ?= "3.4"
 PV = "${LINUX_VERSION}+lollipop"
 S = "${WORKDIR}/git"
 B = "${S}"
