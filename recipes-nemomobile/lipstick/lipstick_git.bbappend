@@ -1,1 +1,1 @@
-RDEPENDS_${PN}_append_dory = " qt5-qpa-hwcomposer-plugin "
+RDEPENDS_${PN}_append_rinato = " qt5-qpa-hwcomposer-plugin "

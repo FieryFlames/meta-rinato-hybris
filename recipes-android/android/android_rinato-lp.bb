@@ -1,15 +1,15 @@
 inherit gettext
 
-SUMMARY = "Downloads the LG G Watch /system and /usr/include/android folders and installs them for libhybris"
+SUMMARY = "Downloads the Gear 2 /system and /usr/include/android folders and installs them for libhybris"
 LICENSE = "CLOSED"
-SRC_URI = "https://dl.dropboxusercontent.com/s/cqvt6d3hkd651ku/system-dory.tar.gz"
-SRC_URI[md5sum] = "05b1545b6d4013af5e035f6d0a663873"
-SRC_URI[sha256sum] = "1b8a03a234ad0c3c84c399759b913435f27352a26b62474a4fe64c8e7fe19e65"
+SRC_URI = "https://dl.dropboxusercontent.com/s/f8ldqdt1jzdlsc4/system.tar.gz"
+SRC_URI[md5sum] = "d7d1e77d4db52c92391df48811431c11"
+SRC_URI[sha256sum] = "da1ce2595d24db0c403f8624f1174c6df951ccdf706bc031c5dcb4aa464ce57b"
 PV = "lollipop"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 INHIBIT_PACKAGE_STRIP = "1"
-COMPATIBLE_MACHINE = "dory"
+COMPATIBLE_MACHINE = "rinato"
 INSANE_SKIP_${PN} = "already-stripped"
 S = "${WORKDIR}"
 B = "${S}"
@@ -31,7 +31,7 @@ do_install() {
     ln -s system/vendor vendor
 }
 
-# FIXME: QA Issue: Architecture did not match (40 to 164) on /work/dory-oe-linux-gnueabi/android/lollipop-r0/packages-split/android-system/system/vendor/firmware/adsp.b00 [arch]
+# FIXME: QA Issue: Architecture did not match (40 to 164) on /work/rinato-oe-linux-gnueabi/android/lollipop-r0/packages-split/android-system/system/vendor/firmware/adsp.b00 [arch]
 do_package_qa() {
 }
 
