@@ -10,7 +10,7 @@ COMPATIBLE_MACHINE = "rinato"
 
 SRC_URI = "git://https://github.com/Biktorgj/Android_b2_Kernel;protocol=https \
     file://defconfig \
-    file://img_info
+    file://img_info"
 SRCREV = "9baeef88e425be653d8287f141ee209d78b918b3"
 LINUX_VERSION ?= "3.10"
 PV = "${LINUX_VERSION}+lollipop"
