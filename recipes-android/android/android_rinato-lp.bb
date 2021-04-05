@@ -2,9 +2,9 @@ inherit gettext
 
 SUMMARY = "Downloads the Gear 2 /system and /usr/include/android folders and installs them for libhybris"
 LICENSE = "CLOSED"
-SRC_URI = "https://dl.dropboxusercontent.com/s/f8ldqdt1jzdlsc4/system.tar.gz"
-SRC_URI[md5sum] = "d7d1e77d4db52c92391df48811431c11"
-SRC_URI[sha256sum] = "da1ce2595d24db0c403f8624f1174c6df951ccdf706bc031c5dcb4aa464ce57b"
+SRC_URI = "https://dl.dropboxusercontent.com/s/9z9ha8zh6njofxn/system.tar.gz"
+SRC_URI[md5sum] = "7dad764097fc40e103b1ea3a70ae2105"
+SRC_URI[sha256sum] = "9de5442c5fb310d539024b93b1e0a05cc0f963444b85d8d5276445c8ad457314"
 PV = "lollipop"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
